@@ -1,2 +1,3 @@
 web: bundle exec rails server -p $PORT
 web: bundle exec rake db:migrate
+db: postgres -D /usr/local/var/postgres
