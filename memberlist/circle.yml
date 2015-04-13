@@ -1,7 +1,9 @@
 deployment:
+  staging:
+    branch: master
+      commands:
+         - heroku run rake db:migrate --app my-heroku-app3
   production:
     branch: master
       commands:
-         - heroku run rake db:migrate --app my-heroku-app3#:
-#             timeout: 400 # if your deploys take a long time
-
+         - heroku run rake db:migrate --app my-heroku-app3
