@@ -2,4 +2,4 @@ deployment:
   staging:
     branch: master
     heroku:
-      appname: foo-bar-123sleepy-sands-6109
+      appname: sleepy-sands-6109
