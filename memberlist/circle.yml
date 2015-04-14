@@ -1,8 +1,4 @@
 deployment:
-  staging:
-    branch: master
-      commands:
-         - heroku run rake db:migrate --app my-heroku-app3
   production:
     branch: master
       commands:
