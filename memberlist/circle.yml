@@ -1,3 +1,5 @@
+general:
+  build_dir: memberlist
 deployment:
   production:
     branch: master
