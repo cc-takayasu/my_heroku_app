@@ -1,5 +1,3 @@
-general:
-  build_dir: memberlist
 test:
   override:
     - ./dummy_test_script.sh
@@ -8,3 +6,4 @@ deployment:
     branch: master
       commands:
          - git push git@heroku.com:my-heroku-app3.git $CIRCLE_SHA1:refs/heads/master
+         - heroku run db:migrate --app my-heroku-app3
