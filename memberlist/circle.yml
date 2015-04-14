@@ -1,5 +1,6 @@
-general:
-  build_dir: memberlist
+test:
+  override:
+    - ./dummy_test_script.sh
 deployment:
   production:
     branch: master
