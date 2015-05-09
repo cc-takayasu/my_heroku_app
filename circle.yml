@@ -7,7 +7,7 @@ deployment:
     commands:
        - heroku maintenance:on -a myherokuapp3
        - heroku scale worker=0 -a myherokuapp3
-       - git push -f git@heroku.com:myherokuapp3.git $CIRCLE_SHA1:refs/heads/master
+       - git push -f heroku $CIRCLE_SHA1:refs/heads/master
        - heroku run rake db:migrate --app myherokuapp3
        - heroku run rake cache:flush -a myherokuapp3
        - heroku maintenance:off -a myherokuapp3
