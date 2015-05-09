@@ -11,4 +11,3 @@ deployment:
        - heroku run rake db:migrate --app myherokuapp3
        - heroku maintenance:off -a myherokuapp3
        - heroku ps:restart --app myherokuapp3
-
