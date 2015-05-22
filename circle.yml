@@ -1,9 +1,9 @@
 test:
   override:
     - ./dummy_test_script.sh
-deployment:
-  production:
-    branch: master
-    commands:
-      - git push git@heroku.com:myherokuapp3.git $CIRCLE_SHA1:master
-      - heroku run rake db:migrate --app myherokuapp3
+#deployment:
+#  production:
+#    branch: master
+#    commands:
+#      - git push git@heroku.com:myherokuapp3.git $CIRCLE_SHA1:master
+#      - heroku run rake db:migrate --app myherokuapp3
