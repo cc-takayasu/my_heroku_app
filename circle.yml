@@ -5,7 +5,5 @@ deployment:
   production:
     branch: master
     commands:
-      - git push -f git@heroku.com:myherokuapp3.git $CIRCLE_SHA1:master
+      - git push git@heroku.com:myherokuapp3.git $CIRCLE_SHA1:master
       - heroku run rake db:migrate --app myherokuapp3
-
-      - heroku ps:restart --app myherokuapp3
